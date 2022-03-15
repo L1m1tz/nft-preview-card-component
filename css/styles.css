@@ -51,6 +51,7 @@ h1>a {
 
 a:hover {
     color: hsl(178, 100%, 50%);
+    cursor: pointer;
 
 }
 
@@ -113,10 +114,13 @@ a:hover {
 
 .card-img:hover #img {
     opacity: 1;
+    cursor: pointer;
+    
 }
 
 .card-img:hover .icon {
     opacity: 0.4;
+    cursor: pointer;
 
 }
 

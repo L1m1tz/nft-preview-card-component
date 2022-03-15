@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<link rel="stylesheet" href="/css/styles.css">
     <!-- displays site properly based on user's device -->
 
     <link
@@ -16,135 +16,19 @@
     <title>Frontend Mentor | NFT preview card component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-
-      body {
-        background: hsl(217, 54%, 11%);
-        font-family: outfit, sans-serif;
-      }
-
-      .wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 90vh;
-        align-items: center;
-        justify-items: center;
-      }
-
-      .card {
-        position: relative;
-        border-radius: 15px;
-        padding: 15px;
-        background-color: hsl(216, 50%, 16%);
-        color: hsl(215, 51%, 70%);
-        display: flex;
-        flex-direction: column;
-        max-width: 300px;
-        margin: 5px;
-      }
-      .card > hr {
-        width: 100%;
-        border: 1px solid hsl(215, 51%, 70%);
-      }
-
-      h1 > a {
-        text-decoration: none;
-        color: white;
-      }
-
-      a:hover {
-        color: hsl(178, 100%, 50%);
-      }
-
-      #img {
-        backgroun-color: hsl(178, 100%, 50%);
-        opacity: 1;
-        border-radius: 10px;
-        border: 1px solid black;
-        width: 300px;
-        transition: 0.5s ease;
-        backface-visibility: hidden;
-      }
-      .icon {
-        backgroun-color: hsl(178, 100%, 50%);
-        transition: 0.5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 27%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      #profile {
-        border-radius: 50px;
-        border: 1px solid white;
-        width: 30px;
-      }
-
-      #price {
-        display: grid;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        grid-template-columns: 120px 120px;
-        column-gap: 50px;
-        row-gap: 10px;
-      }
-
-      .card:hover #img {
-        opacity: 0.3;
-      }
-      .card:hover .icon {
-        opacity: 1;
-      }
-
-      #price > div {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
-      }
-      #price > div > img {
-        margin: 5px;
-      }
-
-      #creator {
-        display: grid;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        grid-template-columns: 10px 180px;
-        column-gap: 40px;
-        row-gap: 10px;
-      }
-      p > a {
-        text-decoration: none;
-        color: white;
-      }
-
-      footer {
-        background: pink;
-        padding: 28px;
-      }
-    </style>
   </head>
   <body>
-    <div class="wrapper">
+    <main>
       <div class="card">
-        <img
-          id="img"
-          src="images/image-equilibrium.jpg"
-          alt="Equilibrium image"
-        />
-        <div class="icon">
-          <img src="images/icon-view.svg" alt="icon" />
+        <div class="card-img">
+          <img
+            id="img"
+            src="images/image-equilibrium.jpg"
+            alt="Equilibrium image"/>
+          
+          <div class="icon">
+           <img src="images/icon-view.svg" alt="icon" />
+          </div>
         </div>
 
         <h1><a href="#">Equilibrium #3429</a></h1>
@@ -168,6 +52,7 @@
         </section>
       </div>
     </div>
+  </main>
     <footer>
       <div class="attribution">
         Challenge by

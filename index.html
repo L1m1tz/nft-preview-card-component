@@ -39,6 +39,7 @@
       }
 
       .card {
+        position: relative;
         border-radius: 15px;
         padding: 15px;
         background-color: hsl(216, 50%, 16%);
@@ -52,6 +53,7 @@
         width: 100%;
         border: 1px solid hsl(215, 51%, 70%);
       }
+
       h1 > a {
         text-decoration: none;
         color: white;
@@ -62,9 +64,22 @@
       }
 
       #img {
+        backgroun-color: hsl(178, 100%, 50%);
+        opacity: 1;
         border-radius: 10px;
         border: 1px solid black;
         width: 300px;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+      }
+      .icon {
+        backgroun-color: hsl(178, 100%, 50%);
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 27%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       #profile {
@@ -81,6 +96,13 @@
         grid-template-columns: 120px 120px;
         column-gap: 50px;
         row-gap: 10px;
+      }
+
+      .card:hover #img {
+        opacity: 0.3;
+      }
+      .card:hover .icon {
+        opacity: 1;
       }
 
       #price > div {
@@ -121,6 +143,9 @@
           src="images/image-equilibrium.jpg"
           alt="Equilibrium image"
         />
+        <div class="icon">
+          <img src="images/icon-view.svg" alt="icon" />
+        </div>
 
         <h1><a href="#">Equilibrium #3429</a></h1>
         <p>Our Equilibrium collection promotes balance and calm.</p>
@@ -128,7 +153,7 @@
         <section id="price">
           <div>
             <img src="images/icon-ethereum.svg" alt="icon-ethereum" />
-            <p style="color:hsl(178, 100%, 50%) ;">0.041 ETH</p>
+            <p style="color: hsl(178, 100%, 50%)">0.041 ETH</p>
           </div>
           <div>
             <img src="images/icon-clock.svg" alt="icon-clock" />

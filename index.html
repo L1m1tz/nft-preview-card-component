@@ -45,10 +45,12 @@
         color: hsl(215, 51%, 70%);
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         max-width: 300px;
-        align-items: flex-start;
+        margin: 5px;
+      }
+      .card > hr {
+        width: 100%;
+        border: 1px solid hsl(215, 51%, 70%);
       }
       h1 > a {
         text-decoration: none;
@@ -68,7 +70,41 @@
       #profile {
         border-radius: 50px;
         border: 1px solid white;
-        width: 40px;
+        width: 30px;
+      }
+
+      #price {
+        display: grid;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        grid-template-columns: 120px 120px;
+        column-gap: 50px;
+        row-gap: 10px;
+      }
+
+      #price > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+      }
+      #price > div > img {
+        margin: 5px;
+      }
+
+      #creator {
+        display: grid;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        grid-template-columns: 10px 180px;
+        column-gap: 40px;
+        row-gap: 10px;
+      }
+      p > a {
+        text-decoration: none;
+        color: white;
       }
 
       footer {
@@ -89,18 +125,22 @@
         <h1><a href="#">Equilibrium #3429</a></h1>
         <p>Our Equilibrium collection promotes balance and calm.</p>
 
-        <section>
-          <img src="images/icon-ethereum.svg" alt="icon-ethereum" />
-          <p>0.041 ETH</p>
-
-          <img src="images/icon-clock.svg" alt="icon-clock" />
-          <p>3 days left</p>
+        <section id="price">
+          <div>
+            <img src="images/icon-ethereum.svg" alt="icon-ethereum" />
+            <p style="color:hsl(178, 100%, 50%) ;">0.041 ETH</p>
+          </div>
+          <div>
+            <img src="images/icon-clock.svg" alt="icon-clock" />
+            <p>3 days left</p>
+          </div>
         </section>
         <hr />
+        <section id="creator">
+          <img id="profile" src="images/image-avatar.png" alt="image avatar" />
 
-        <img id="profile" src="images/image-avatar.png" alt="image avatar" />
-
-        <p>Creation of <a href="#">Jules Wyvern</a></p>
+          <p>Creation of <a href="#">Jules Wyvern</a></p>
+        </section>
       </div>
     </div>
     <footer>

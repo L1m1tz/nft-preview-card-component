@@ -111,11 +111,11 @@ a:hover {
 
 }
 
-.card:hover #img {
+.card-img:hover #img {
     opacity: 1;
 }
 
-.card:hover .icon {
+.card-img:hover .icon {
     opacity: 0.4;
 
 }

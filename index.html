@@ -3,11 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- displays site properly based on user's device -->
-
-    <!-- styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="icon"
       type="image/png"
@@ -16,56 +14,46 @@
     />
 
     <title>Frontend Mentor | NFT preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <main>
       <div class="card">
         <div class="card-img">
-          <div>
-          <img
-            id="img"
-            src="images/image-equilibrium.jpg"
-            alt="Equilibrium image"/>
-            </div>
-          
-          <div class="icon">
-           <img src="images/icon-view.svg" alt="icon" />
+          <img src="./images/image-equilibrium.jpg" alt="cube" />
+          <div class="overlay">
+            <img src="./images/icon-view.svg" alt="view-icon" />
           </div>
         </div>
-
-        <h1><a href="#">Equilibrium #3429</a></h1>
-        <p>Our Equilibrium collection promotes balance and calm.</p>
-
-        <section id="price">
-          <div>
-            <img src="images/icon-ethereum.svg" alt="icon-ethereum" />
-            <p style="color: hsl(178, 100%, 50%)">0.041 ETH</p>
+        <div class="card-details">
+          <div class="card-text">
+            <h3>Equilibrium #3429</h3>
+            <p>Our Equilibrium collection promotes balance and calm.</p>
           </div>
-          <div>
-            <img src="images/icon-clock.svg" alt="icon-clock" />
-            <p>3 days left</p>
+          <div class="card-price-time">
+            <div class="card-price">
+              <img src="./images/icon-ethereum.svg" alt="etherium-icon" />
+              <p>0.041 ETH</p>
+            </div>
+            <div class="card-time">
+              <img src="./images/icon-clock.svg" alt="clock-icon" />
+              <p>3 days left</p>
+            </div>
           </div>
-        </section>
-        <hr />
-        <section id="creator">
-          <img id="profile" src="images/image-avatar.png" alt="image avatar" />
-
-          <p>Creation of <a href="#">Jules Wyvern</a></p>
-        </section>
+          <div class="card-creator">
+            <img src="./images/image-avatar.png" alt="creator image avatar" />
+            <small>Creation of <a href="#">Jules Wyvern</a></small>
+          </div>
+        </div>
       </div>
-    </div>
-   
-  </main>
-  
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/L1m1tz">Andrew</a>.
+      </div>
+    </footer>
   </body>
-  <footer>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://www.frontendmentor.io/profile/L1m1tz">Andrew</a>.
-    </div>
-  </footer>
 </html>

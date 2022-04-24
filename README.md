@@ -51,7 +51,7 @@ Users should be able to:
 
 ### What I learned
 
-UIn this challange i improved my understanding on grid and flexbox, i also learned how to put an overlay on an image.
+In this challange i improved my understanding on grid and flexbox, i also learned how to put an overlay on an image.
 To see how you can add code snippets, see below:
 
 ```html
